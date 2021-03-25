@@ -22,7 +22,8 @@ app.use(logger("dev"));
 
 /**CONNECT TO DB */
 /* mongoose.connect("mongodb://localhost:27017/book-shop", */
-mongoose.connect("mongodb+srv://bookstore_user:VaH3r3pLAsU7LAZt@cluster0.jdiqq.mongodb.net/bookstore?retryWrites=true&w=majority", {
+const url="mongodb+srv://bookstore_user:VaH3r3pLAsU7LAZt@cluster0.jdiqq.mongodb.net/bookstore?retryWrites=true&w=majority";
+mongoose.connect(url, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true
